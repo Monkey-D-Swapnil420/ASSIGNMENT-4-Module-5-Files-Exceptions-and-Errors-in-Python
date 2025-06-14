@@ -1,0 +1,12 @@
+try:
+    file1=open('sample.txt','r+')
+    r=file1.readline()
+    print("reading file content\n")
+    print("line 1:",r)
+    rr=file1.readline()
+    print("line 2:",rr)
+    r=file1.readline()
+    print("line 3:",r)
+    file1.close()
+except FileNotFoundError:
+    print("the file 'sample.txt' was not found")
